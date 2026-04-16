@@ -12,9 +12,8 @@ public partial class MainPage : ContentPage
 
 	private void OnCounterClicked(object? sender, EventArgs e)
 	{
-		ColorRed.Value = random.Next(255);
-		ColorGreen.Value = random.Next(255);
-		ColorBlue. Value = random.Next(255);
-		RandomVal.Text = $"Generar otro color aleatorio";
+		ColorRed.Value = random.Next(256);
+		ColorGreen.Value = random.Next(256);
+		ColorBlue. Value = random.Next(256);
 	}
 }

@@ -7,50 +7,96 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a submarine number ten" />
+            
+            <Border Stroke="Black" StrokeShape="RoundRectangle 20">
+                <Grid BackgroundColor="pink" Padding="25" RowSpacing="50" >
 
-            <Label
-                Text="Hello, World!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
+                    <!-- Configuración Vertical (Filas) -->
 
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Hola" />
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
 
-            <Slider
-                Grid.Row="0"
-                Margin="10, 0, 0, 0"
-                x:Name="ColorRed"
-                Value="0" Minimum="0" Maximum="255"
-            />
+                    <!-- Configuración horizontal (Columnas) -->
 
-            <Slider  
-                Grid.Row="1"
-                Margin="10, 0, 0, 0"
-                x:Name="ColorGreen"
-                Value="0" Minimum="0" Maximum="255"
-            />
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-            <Slider
-                Grid.Row="2"
-                Margin="10, 0, 0, 0"
-                x:Name="ColorBlue"
-                Value="0" Minimum="0" Maximum="255"
-            />
+                    <!-- Título -->
 
-            <Button
-                x:Name="RandomVal"
-                Text="Color aleatorio" 
-                SemanticProperties.Hint="Elige un color aleatorio de la paleta de colores"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                    <Label
+                        Grid.Row="0" Grid.ColumnSpan="2"
+                        Text="Colores"
+                        Style="{StaticResource SubHeadline}"
+                    />
+
+                    <!-- Slide Red -->
+
+                    <Label
+                        Grid.Row="1" Grid.Column="0" VerticalOptions="Center"
+                        Text="R:" FontSize="15"
+                        Style="{StaticResource SubHeadline}"
+                    />
+                    
+                    <Slider
+                        Grid.Row="1" Grid.ColumnSpan="2"
+                        Margin="5, 0, 0, 0" VerticalOptions="Center"
+                        x:Name="ColorRed"
+                        Value="0" Minimum="0" Maximum="255"
+                        ThumbColor="Red" MinimumTrackColor="Red" MaximumTrackColor="black"
+                    />
+
+                    <!-- Slide Green -->
+
+                    <Label
+                        Grid.Row="2" Grid.Column="0" VerticalOptions="Center"
+                        Text="G:" FontSize="15"
+                        Style="{StaticResource SubHeadline}"
+                    />
+
+                    <Slider  
+                        Grid.Row="2" Grid.ColumnSpan="2"
+                        Margin="5, 0, 0, 0" VerticalOptions="Center"
+                        x:Name="ColorGreen"
+                        Value="0" Minimum="0" Maximum="255"
+                        ThumbColor="Green" MinimumTrackColor="Green" MaximumTrackColor="Black"
+                    />
+
+                    <!-- Slide Blue -->
+
+                    <Label
+                        Grid.Row="3" Grid.Column="0" VerticalOptions="Center"
+                        Text="B:" FontSize="15"
+                        Style="{StaticResource SubHeadline}"
+                    />
+
+                    <Slider
+                        Grid.Row="3" Grid.ColumnSpan="2"
+                        Margin="5, 0, 0, 0" VerticalOptions="Center"
+                        x:Name="ColorBlue"
+                        Value="0" Minimum="0" Maximum="255"
+                        ThumbColor="Blue" MinimumTrackColor="Blue" MaximumTrackColor="Black"
+                    />
+
+                    <!-- Botón aleatorio -->
+
+                    <Button
+                        Grid.Row="4" Grid.ColumnSpan="2"
+                        x:Name="RandomVal"
+                        Text="Generar algún color aleatorio" 
+                        Clicked="OnCounterClicked"
+                        HorizontalOptions="Center" 
+                    />
+
+                </Grid>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 
