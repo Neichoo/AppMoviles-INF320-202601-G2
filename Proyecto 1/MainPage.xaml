@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="PaginaHome"
+             Title="Color Generator"
+             x:Class="MyTest.MainPage">
+
+    <Shell.TitleView>
+        <Grid>
+            <Label
+                Text="Color Generator"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"
+                FontAttributes="Bold" />
+        </Grid>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Border Stroke="Black" StrokeShape="RoundRectangle 20">
+                <Grid
+                    x:Name="ContenedorColor"
+                    BackgroundColor="White"
+                    Padding="25"
+                    RowSpacing="35">
+
+                    <!-- Configuración Vertical (Filas) -->
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Configuración horizontal (Columnas) -->
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Título -->
+
+                    <Label
+                        Grid.Row="0" Grid.ColumnSpan="3"
+                        Text="Colores"
+                        Style="{StaticResource SubHeadline}"
+                    />
+
+                    <HorizontalStackLayout
+                        Grid.Row="1" Grid.ColumnSpan="3"
+                        Spacing="6"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center">
+                        <Label
+                            Text="HEX:"
+                            FontSize="14"
+                            FontAttributes="Bold"
+                            VerticalTextAlignment="Center" />
+                        <Label
+                            x:Name="EtiquetaHexadecimal"
+                            Text="#000000"
+                            FontSize="14"
+                            FontAttributes="Bold"
+                            VerticalTextAlignment="Center" />
+                        <Button
+                            Text="Copiar"
+                            FontSize="12"
+                            Padding="10,5"
+                            VerticalOptions="Center"
+                            Clicked="AlCopiarHexadecimalClicked" />
+                    </HorizontalStackLayout>
+
+                    <!-- Slide Red -->
+
+                    <Label
+                        Grid.Row="2" Grid.Column="0" VerticalOptions="Center"
+                        Text="R:" FontSize="15"
+                        Style="{StaticResource SubHeadline}"
+                    />
+                    
+                    <Slider
+                        Grid.Row="2" Grid.Column="1"
+                        Margin="5, 0, 0, 0" VerticalOptions="Center"
+                        x:Name="ColorRed"
+                        Value="0" Minimum="0" Maximum="255"
+                        ThumbColor="Red" MinimumTrackColor="Red" MaximumTrackColor="black"
+                        ValueChanged="AlCambiarValorSlider"
+                    />
+
+                    <Label
+                        x:Name="EtiquetaValorRojo"
+                        Grid.Row="2" Grid.Column="2" VerticalOptions="Center"
+                        Text="0" FontSize="15"
+                        Style="{StaticResource SubHeadline}" />
+
+                    <!-- Slide Green -->
+
+                    <Label
+                        Grid.Row="3" Grid.Column="0" VerticalOptions="Center"
+                        Text="G:" FontSize="15"
+                        Style="{StaticResource SubHeadline}"
+                    />
+
+                    <Slider  
+                        Grid.Row="3" Grid.Column="1"
+                        Margin="5, 0, 0, 0" VerticalOptions="Center"
+                        x:Name="ColorGreen"
+                        Value="0" Minimum="0" Maximum="255"
+                        ThumbColor="Green" MinimumTrackColor="Green" MaximumTrackColor="Black"
+                        ValueChanged="AlCambiarValorSlider"
+                    />
+
+                    <Label
+                        x:Name="EtiquetaValorVerde"
+                        Grid.Row="3" Grid.Column="2" VerticalOptions="Center"
+                        Text="0" FontSize="15"
+                        Style="{StaticResource SubHeadline}" />
+
+                    <!-- Slide Blue -->
+
+                    <Label
+                        Grid.Row="4" Grid.Column="0" VerticalOptions="Center"
+                        Text="B:" FontSize="15"
+                        Style="{StaticResource SubHeadline}"
+                    />
+
+                    <Slider
+                        Grid.Row="4" Grid.Column="1"
+                        Margin="5, 0, 0, 0" VerticalOptions="Center"
+                        x:Name="ColorBlue"
+                        Value="0" Minimum="0" Maximum="255"
+                        ThumbColor="Blue" MinimumTrackColor="Blue" MaximumTrackColor="Black"
+                        ValueChanged="AlCambiarValorSlider"
+                    />
+
+                    <Label
+                        x:Name="EtiquetaValorAzul"
+                        Grid.Row="4" Grid.Column="2" VerticalOptions="Center"
+                        Text="0" FontSize="15"
+                        Style="{StaticResource SubHeadline}" />
+
+                    <!-- Botón aleatorio -->
+
+                    <Button
+                        Grid.Row="5" Grid.ColumnSpan="3"
+                        x:Name="RandomVal"
+                        Text="Generar algún color aleatorio" 
+                        Clicked="OnCounterClicked"
+                        HorizontalOptions="Center" 
+                    />
+
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
