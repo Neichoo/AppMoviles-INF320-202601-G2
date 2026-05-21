@@ -63,7 +63,7 @@
                     <Label
                         FontSize="40"
                         Grid.Row="3" Grid.RowSpan="2" Grid.Column="0"
-                        Text="{Binding Total}"
+                        Text="PH"
                         Style="{StaticResource SubHeadline}"
                     />
 
@@ -92,7 +92,7 @@
 
                     <Label
                         Grid.Row="4" Grid.Column="1"
-                        Text="{Binding Tip}"
+                        Text="PH"
                         Style="{StaticResource SubHeadline}"
                     /> 
 
@@ -133,7 +133,7 @@
 
                     <Entry
                         Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
-                        Text="a"
+                        Text="PH" Keyboard="Numeric"
                         />
 
                     <!-- Elige propina -->
@@ -149,7 +149,7 @@
                         Grid.Row="1" Grid.Column="1"
                         x:Name="P10"
                         Text="10%" 
-                        Clicked="PHclick"
+                        
                         HorizontalOptions="Center" 
                     />
 
@@ -157,7 +157,7 @@
                         Grid.Row="1" Grid.Column="2"
                         x:Name="P15"
                         Text="15%" 
-                        Clicked="PHclick"
+                        
                         HorizontalOptions="Center" 
                     />
 
@@ -165,7 +165,7 @@
                         Grid.Row="1" Grid.Column="3"
                         x:Name="P20"
                         Text="20%" 
-                        Clicked="PHclick"
+                        
                         HorizontalOptions="Center" 
                     />
 
@@ -184,7 +184,6 @@
                         x:Name="personalized_Propina"
                         Value="0" Minimum="0" Maximum="25"
                         ThumbColor="lightblue" MinimumTrackColor="Darkblue" MaximumTrackColor="darkblue"
-                        ValueChanged="PHchange"
                     />
 
                     <!-- Dividir el total -->
@@ -200,14 +199,14 @@
                         Grid.Row="3" Grid.Column="1"
                         x:Name="sus"
                         FontSize="40" Text="-" 
-                        Clicked="PHclick"
+                        
                         HorizontalOptions="Center" 
                     />
 
                     <Label
                         FontSize="40"
                         Grid.Row="3" Grid.Column="2"
-                        Text="{Binding N}"
+                        Text="PH"
                         Style="{StaticResource SubHeadline}"
                     /> 
 
@@ -215,7 +214,7 @@
                         Grid.Row="3" Grid.Column="3"
                         x:Name="sum"
                         FontSize="40" Text="+" 
-                        Clicked="PHclick"
+                        
                         HorizontalOptions="Center" 
                     />
                 </Grid>
