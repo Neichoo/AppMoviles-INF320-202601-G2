@@ -1,6 +1,6 @@
-﻿using Foundation;
+using Foundation;
 
-namespace MyTest;
+namespace CalculadoraPropina;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

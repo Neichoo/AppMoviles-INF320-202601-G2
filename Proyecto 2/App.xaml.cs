@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace MyTest;
+namespace CalculadoraPropina;
 public partial class App : Application
 {
 	public App()

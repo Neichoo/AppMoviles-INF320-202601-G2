@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace MyTest;
+namespace CalculadoraPropina;
 
 public static class MauiProgram
 {

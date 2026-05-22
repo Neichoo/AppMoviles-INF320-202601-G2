@@ -1,4 +1,4 @@
-﻿namespace MyTest;
+namespace CalculadoraPropina;
 
 public partial class AppShell : Shell
 {
