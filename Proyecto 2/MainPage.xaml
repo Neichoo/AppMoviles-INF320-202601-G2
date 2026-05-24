@@ -155,7 +155,7 @@
                         BackgroundColor="DarkBlue" CornerRadius="4"
                         HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         Text="10%"
-                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="{x:Int32 10}"
+                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="10"
                     />
 
                     <Button
@@ -163,7 +163,7 @@
                         BackgroundColor="DarkBlue" CornerRadius="4"
                         HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         Text="15%"
-                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="{x:Int32 15}"
+                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="15"
                     />
 
                     <Button
@@ -171,7 +171,7 @@
                         BackgroundColor="DarkBlue" CornerRadius="4"
                         HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         Text="20%"
-                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="{x:Int32 20}"
+                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="20"
                     />
 
                     <!-- PROPINA SLIDER -->
@@ -217,7 +217,7 @@
                         BackgroundColor="DarkBlue" CornerRadius="4"
                         HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         FontSize="36" Text="-"
-                        Command="{Binding CambiarCantidadPersonasCommand}" CommandParameter="{x:Int32 -1}"
+                        Command="{Binding CambiarCantidadPersonasCommand}" CommandParameter="-1"
                     />
 
                     <Label
@@ -231,7 +231,7 @@
                         BackgroundColor="DarkBlue" CornerRadius="4"
                         HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         FontSize="36" Text="+"
-                        Command="{Binding CambiarCantidadPersonasCommand}" CommandParameter="{x:Int32 1}"
+                        Command="{Binding CambiarCantidadPersonasCommand}" CommandParameter="1"
                     />
                 </Grid>
             </Border>
