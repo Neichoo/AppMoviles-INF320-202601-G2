@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CalculadoraPropina.MainPage"
              Title="Calculadora de Propina"
-             BackgroundColor="Black">
+             BackgroundColor="#FF919191">
 
     <Shell.TitleView>
         <Grid>
@@ -17,13 +17,18 @@
     </Shell.TitleView>
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="10">
+        <VerticalStackLayout Padding="12,20" Spacing="12">
 
-            <Border Stroke="Black" StrokeShape="RoundRectangle 5">
+            <Border Stroke="darkblue" StrokeShape="RoundRectangle 16,16,0,0" StrokeThickness="2">
+                
+                <!-- SECCIÓN SUPERIOR -->
+                
                 <Grid
-                    BackgroundColor="Gray"
+                    BackgroundColor="white"
                     Padding="20"
-                    RowSpacing="10">
+                    RowSpacing="8">
+
+                    <!-- Definición de filas y columnas -->
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -36,64 +41,72 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <Label
-                        Grid.Row="0"
-                        Grid.ColumnSpan="2"
-                        Text="Total por Persona"
-                        Style="{StaticResource SubHeadline}" />
+                    <!-- Sección TOTAL POR PERSONA -->
 
                     <Label
-                        Grid.Row="1"
-                        Grid.ColumnSpan="2"
-                        FontSize="18"
+                        Grid.Row="0" Grid.ColumnSpan="2"
+                        FontSize="28" Style="{StaticResource SubHeadline}"
                         Text="Total por persona"
-                        Style="{StaticResource SubHeadline}" />
+                        />
 
                     <Label
-                        Grid.Row="1"
-                        Grid.ColumnSpan="2"
-                        Margin="0,28,0,0"
-                        FontSize="32"
+                        Grid.Row="1" Grid.ColumnSpan="2"
+                        FontSize="32" Style="{StaticResource SubHeadline}"
                         Text="{Binding TotalPorPersonaTexto}"
-                        Style="{StaticResource SubHeadline}" />
+                        />
+                    
+                    <!-- Sección SUBTOTAL y PROPINA -->
 
-                    <Grid
-                        Grid.Row="2"
-                        Grid.ColumnSpan="2"
-                        ColumnDefinitions="*,*"
-                        ColumnSpacing="16"
-                        Margin="0,12,0,0">
+                    <Border 
+                        Stroke="darkblue" StrokeShape="RoundRectangle 5" StrokeThickness="1" Background="#FEFEFEFE"
+                        Grid.Row="2" Grid.ColumnSpan="2" Padding="5,5"
+                        >
+                        <Grid
+                            ColumnDefinitions="*,*"
+                            ColumnSpacing="16"
+                            Margin="0,0,0,0">
 
-                        <VerticalStackLayout Grid.Column="0" Spacing="4">
-                            <Label
-                                FontSize="15"
-                                Text="Propina por persona"
-                                Style="{StaticResource SubHeadline}" />
+                            <!-- PROPINA -->
 
-                            <Label
-                                Text="{Binding PropinaPorPersonaTexto}"
-                                Style="{StaticResource SubHeadline}" />
-                        </VerticalStackLayout>
+                            <VerticalStackLayout Grid.Column="0" Spacing="4">
+                                <Label
+                                    FontSize="16"
+                                    Text="Propina por persona"
+                                    Style="{StaticResource SubHeadline}" />
 
-                        <VerticalStackLayout Grid.Column="1" Spacing="4">
-                            <Label
-                                FontSize="15"
-                                Text="Subtotal por persona"
-                                Style="{StaticResource SubHeadline}" />
+                                <Label
+                                    FontSize="20"
+                                    Text="{Binding PropinaPorPersonaTexto}"
+                                    Style="{StaticResource SubHeadline}" />
+                            </VerticalStackLayout>
 
-                            <Label
-                                Text="{Binding SubtotalPorPersonaTexto}"
-                                Style="{StaticResource SubHeadline}" />
-                        </VerticalStackLayout>
-                    </Grid>
+                            <!-- SUBTOTAL -->
+
+                            <VerticalStackLayout Grid.Column="1" Spacing="4">
+                                <Label
+                                    FontSize="16"
+                                    Text="Subtotal por persona"
+                                    Style="{StaticResource SubHeadline}" />
+
+                                <Label
+                                    FontSize="20"
+                                    Text="{Binding SubtotalPorPersonaTexto}"
+                                    Style="{StaticResource SubHeadline}" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
                 </Grid>
             </Border>
 
-            <Border Stroke="Black" StrokeShape="RoundRectangle 5">
+            <!-- SECCIÓN INFERIOR -->
+
+            <Border Stroke="darkblue" StrokeShape="RoundRectangle 0,0,16,16" StrokeThickness="2">
                 <Grid
-                    BackgroundColor="Gray"
+                    BackgroundColor="white"
                     Padding="20"
-                    RowSpacing="10">
+                    RowSpacing="12">
+
+                    <!-- Definición de filas y columnas -->
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
@@ -110,117 +123,116 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
+                    <!-- TOTAL -->
+
                     <Label
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        FontSize="15"
+                        Grid.Row="0" Grid.Column="0"
+                        FontSize="16" HorizontalTextAlignment="Start" Style="{StaticResource SubHeadline}"
                         Text="Total de consumo:"
-                        Style="{StaticResource SubHeadline}" />
+                        />
 
-                    <Entry
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="3"
-                        Keyboard="Numeric"
-                        Placeholder="0"
-                        Text="{Binding TotalConsumoTexto}" />
+                    <Border 
+                        Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
+                        Stroke="darkblue" StrokeThickness="1" StrokeShape="RoundRectangle 8" BackgroundColor="lightgray"
+                        >
+                        <Entry 
+                            Keyboard="Numeric" HorizontalTextAlignment="Center" ClearButtonVisibility="WhileEditing"
+                            Placeholder="00000" PlaceholderColor="gray"
+                            Text="{Binding TotalConsumoTexto}"
+                        />
+                    </Border>
+
+                    <!-- PROPINA BOTÓN -->
 
                     <Label
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        FontSize="15"
+                        Grid.Row="1" Grid.Column="0"
+                        FontSize="16" HorizontalTextAlignment="Start" Style="{StaticResource SubHeadline}"
                         Text="Propina predefinida:"
-                        Style="{StaticResource SubHeadline}" />
+                    />
 
                     <Button
-                        Grid.Row="1"
-                        Grid.Column="1"
+                        Grid.Row="1" Grid.Column="1"
+                        BackgroundColor="DarkBlue" CornerRadius="4"
+                        HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         Text="10%"
-                        Command="{Binding SeleccionarPropinaCommand}"
-                        CommandParameter="{x:Int32 10}"
-                        HorizontalOptions="Center" />
+                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="{x:Int32 10}"
+                    />
 
                     <Button
-                        Grid.Row="1"
-                        Grid.Column="2"
+                        Grid.Row="1" Grid.Column="2"
+                        BackgroundColor="DarkBlue" CornerRadius="4"
+                        HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         Text="15%"
-                        Command="{Binding SeleccionarPropinaCommand}"
-                        CommandParameter="{x:Int32 15}"
-                        HorizontalOptions="Center" />
+                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="{x:Int32 15}"
+                    />
 
                     <Button
-                        Grid.Row="1"
-                        Grid.Column="3"
+                        Grid.Row="1" Grid.Column="3"
+                        BackgroundColor="DarkBlue" CornerRadius="4"
+                        HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
                         Text="20%"
-                        Command="{Binding SeleccionarPropinaCommand}"
-                        CommandParameter="{x:Int32 20}"
-                        HorizontalOptions="Center" />
+                        Command="{Binding SeleccionarPropinaCommand}" CommandParameter="{x:Int32 20}"
+                    />
+
+                    <!-- PROPINA SLIDER -->
 
                     <Label
-                        Grid.Row="2"
-                        Grid.Column="0"
-                        FontSize="15"
+                        Grid.Row="2" Grid.Column="0"
+                        FontSize="16" HorizontalTextAlignment="Start" Style="{StaticResource SubHeadline}"
                         Text="Propina variable:"
-                        Style="{StaticResource SubHeadline}" />
+                    />
 
                     <Slider
-                        Grid.Row="2"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="3"
+                        Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3"
+                        ThumbColor="Darkblue" MinimumTrackColor="DarkBlue" MaximumTrackColor="DarkBlue"
                         Margin="5, 0, 0, 0"
                         VerticalOptions="Center"
-                        Minimum="0"
-                        Maximum="50"
-                        Value="{Binding PorcentajePropina}"
-                        ThumbColor="LightBlue"
-                        MinimumTrackColor="DarkBlue"
-                        MaximumTrackColor="DarkBlue" />
+                        Value="{Binding PorcentajePropina}" Minimum="0" Maximum="50"
+                    />
+
+                    <!-- VALOR PROPINA SLIDER -->
 
                     <Label
-                        Grid.Row="3"
-                        Grid.Column="0"
-                        FontSize="15"
+                        Grid.Row="3" Grid.Column="0"
+                        FontSize="16" HorizontalTextAlignment="Start" Style="{StaticResource SubHeadline}"
                         Text="Porcentaje actual:"
-                        Style="{StaticResource SubHeadline}" />
+                    />
 
                     <Label
-                        Grid.Row="3"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="3"
+                        Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"
+                        Style="{StaticResource SubHeadline}"
                         Text="{Binding PorcentajePropinaTexto}"
-                        Style="{StaticResource SubHeadline}" />
+                    />
+
+                    <!-- CANTIDAD DE PERSONAS -->
 
                     <Label
-                        Grid.Row="4"
-                        Grid.Column="0"
-                        FontSize="15"
+                        Grid.Row="4" Grid.Column="0"
+                        FontSize="16" HorizontalTextAlignment="Start" Style="{StaticResource SubHeadline}"
                         Text="Cantidad de personas:"
-                        Style="{StaticResource SubHeadline}" />
+                    />
 
                     <Button
-                        Grid.Row="4"
-                        Grid.Column="1"
-                        FontSize="40"
-                        Text="-"
-                        Command="{Binding CambiarCantidadPersonasCommand}"
-                        CommandParameter="{x:Int32 -1}"
-                        HorizontalOptions="Center" />
+                        Grid.Row="4" Grid.Column="1"
+                        BackgroundColor="DarkBlue" CornerRadius="4"
+                        HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
+                        FontSize="36" Text="-"
+                        Command="{Binding CambiarCantidadPersonasCommand}" CommandParameter="{x:Int32 -1}"
+                    />
 
                     <Label
-                        Grid.Row="4"
-                        Grid.Column="2"
-                        FontSize="40"
+                        Grid.Row="4" Grid.Column="2"
+                        FontSize="40" Style="{StaticResource SubHeadline}"
                         Text="{Binding CantidadPersonasTexto}"
-                        Style="{StaticResource SubHeadline}" />
+                    />
 
                     <Button
-                        Grid.Row="4"
-                        Grid.Column="3"
-                        FontSize="40"
-                        Text="+"
-                        Command="{Binding CambiarCantidadPersonasCommand}"
-                        CommandParameter="{x:Int32 1}"
-                        HorizontalOptions="Center" />
+                        Grid.Row="4" Grid.Column="3"
+                        BackgroundColor="DarkBlue" CornerRadius="4"
+                        HorizontalOptions="Fill" VerticalOptions="Fill" Margin="8"
+                        FontSize="36" Text="+"
+                        Command="{Binding CambiarCantidadPersonasCommand}" CommandParameter="{x:Int32 1}"
+                    />
                 </Grid>
             </Border>
         </VerticalStackLayout>

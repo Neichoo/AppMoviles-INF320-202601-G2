@@ -41,7 +41,7 @@ public class CalculadoraPropinaViewModel : ObservableObject{
     public double PorcentajePropina{
         get => porcentajePropina;
         set{
-            var valorNormalizado = value;
+            var valorNormalizado = Math.Round(value);
             if (valorNormalizado < 0){
                 valorNormalizado = 0;
             }
