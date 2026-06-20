@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MiAppGastos</name>
+    </assembly>
+    <members>
+        <member name="T:MiAppGastos.ViewModels.AddTransactionViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.AddTransactionViewModel.Description">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.AddTransactionViewModel.description"/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.AddTransactionViewModel.Amount">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.AddTransactionViewModel.amount"/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.AddTransactionViewModel.Date">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.AddTransactionViewModel.date"/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.AddTransactionViewModel.SelectedType">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.AddTransactionViewModel.selectedType"/>
+        </member>
+        <member name="F:MiAppGastos.ViewModels.AddTransactionViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:MiAppGastos.ViewModels.AddTransactionViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.AddTransactionViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MiAppGastos.ViewModels.AddTransactionViewModel.Save"/>.</summary>
+        </member>
+        <member name="F:MiAppGastos.ViewModels.AddTransactionViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:MiAppGastos.ViewModels.AddTransactionViewModel.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.AddTransactionViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MiAppGastos.ViewModels.AddTransactionViewModel.Cancel"/>.</summary>
+        </member>
+        <member name="T:MiAppGastos.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.MainViewModel.Transactions">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.MainViewModel.transactions"/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.MainViewModel.TotalBalance">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.MainViewModel.totalBalance"/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.MainViewModel.TotalIngresos">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.MainViewModel.totalIngresos"/>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.MainViewModel.TotalGastos">
+            <inheritdoc cref="F:MiAppGastos.ViewModels.MainViewModel.totalGastos"/>
+        </member>
+        <member name="F:MiAppGastos.ViewModels.MainViewModel.deleteTransactionCommand">
+            <summary>The backing field for <see cref="P:MiAppGastos.ViewModels.MainViewModel.DeleteTransactionCommand"/>.</summary>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.MainViewModel.DeleteTransactionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:MiAppGastos.ViewModels.MainViewModel.DeleteTransaction(System.Int32)"/>.</summary>
+        </member>
+        <member name="F:MiAppGastos.ViewModels.MainViewModel.goToAddTransactionCommand">
+            <summary>The backing field for <see cref="P:MiAppGastos.ViewModels.MainViewModel.GoToAddTransactionCommand"/>.</summary>
+        </member>
+        <member name="P:MiAppGastos.ViewModels.MainViewModel.GoToAddTransactionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MiAppGastos.ViewModels.MainViewModel.GoToAddTransaction"/>.</summary>
+        </member>
+        <member name="T:MiAppGastos.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Amount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Amount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Date">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Date" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Transactions">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Transactions" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalBalance">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalBalance" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalIngresos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalIngresos" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TotalGastos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TotalGastos" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Amount">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Amount" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Date">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Date" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Transactions">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Transactions" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalBalance">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalBalance" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalIngresos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalIngresos" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TotalGastos">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TotalGastos" generated properties.</summary>
+        </member>
+    </members>
+</doc>

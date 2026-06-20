@@ -1,0 +1,219 @@
+
+------------------------------------------------------------------------------
+You may only use the Microsoft Visual Studio .NET/C/C++ Debugger (vsdbg) with
+Visual Studio Code, Visual Studio or Visual Studio for Mac software to help you
+develop and test your applications.
+------------------------------------------------------------------------------
+[ame.miappgastos] Late-enabling -Xcheck:jni
+[ame.miappgastos] Using CollectorTypeCMC GC.
+[ame.miappgastos] Unexpected CPU variant for x86: x86_64.
+[ame.miappgastos] Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+[nativeloader] Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+[ApplicationLoaders] Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+[ApplicationLoaders] Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+[nativeloader] Configuring clns-9 for other apk /data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/lib/x86_64:/data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.companyname.miappgastos
+[nativeloader] Load libjdwp.so using system ns (caller=<unknown>): ok
+[ame.miappgastos] AssetManager2(0x783b419d7f98) locale list changing from [] to [en-US]
+[GraphicsEnvironment] Currently set values for:
+[GraphicsEnvironment]   angle_gl_driver_selection_pkgs=[]
+[GraphicsEnvironment]   angle_gl_driver_selection_values=[]
+[GraphicsEnvironment] com.companyname.miappgastos is not listed in per-application setting
+[GraphicsEnvironment] ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+[GraphicsEnvironment] com.companyname.miappgastos is not listed in ANGLE allowlist or settings, returning default
+[GraphicsEnvironment] Neither updatable production driver nor prerelease driver is supported.
+[System.out] Sending WAIT chunk
+[ame.miappgastos] Suspending all threads took: 11.537ms
+[System.out] Debugger has connected
+6
+[System.out] waiting for debugger to settle...
+[System.out] debugger detached?
+[nativeloader] Load /data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/lib/x86_64/libmonosgen-2.0.so using class loader ns clns-9 (caller=/data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/base.apk!classes2.dex): ok
+[nativeloader] Load /data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/lib/x86_64/libxamarin-app.so using class loader ns clns-9 (caller=/data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/base.apk!classes2.dex): ok
+[nativeloader] Load /data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/lib/x86_64/libmonodroid.so using class loader ns clns-9 (caller=/data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/base.apk!classes2.dex): ok
+[monodroid] Failed to create directory '/data/user/0/com.companyname.miappgastos/files/.__override__/x86_64'. File exists
+[monodroid] Creating public update directory: `/data/user/0/com.companyname.miappgastos/files/.__override__/x86_64`
+[ame.miappgastos] Attempt to remove non-JNI local reference
+[monodroid-debug] Trying to initialize the debugger with options: --debugger-agent=transport=dt_socket,loglevel=0,address=127.0.0.1:49377,server=y,embedding=1,timeout=30000
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Private.CoreLib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[nativeloader] Load /data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/lib/x86_64/libSystem.Security.Cryptography.Native.Android.so using class loader ns clns-9 (caller=/data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/base.apk!classes2.dex): ok
+[DOTNET] AndroidCryptoNative_InitLibraryOnLoad: jint AndroidCryptoNative_InitLibraryOnLoad(JavaVM *, void *) in /__w/1/s/src/runtime/src/native/libs/System.Security.Cryptography.Native.Android/pal_jni.c
+[DOTNET] GetOptionalClassGRef: optional class com/android/org/conscrypt/OpenSSLEngineImpl was not found
+[nativeloader] Load /data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/lib/x86_64/libxamarin-debug-app-helper.so using class loader ns clns-9 (caller=/data/app/~~xIk0WCfrJw7IlUnBHFRRxQ==/com.companyname.miappgastos-DoWzbxeO4WFYL9lfOdMqtg==/base.apk!classes2.dex): ok
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly MiAppGastos.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Mono.Android.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Runtime.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Java.Interop.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Runtime.InteropServices.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\MiAppGastos.dll'. Símbolos cargados.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Mono.Android.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Java.Interop.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Runtime.InteropServices.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Mono.Android.Runtime.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Collections.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Collections.Concurrent.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Threading.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Mono.Android.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Collections.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Collections.Concurrent.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Threading.Thread.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Diagnostics.StackTrace.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Threading.Thread.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Diagnostics.StackTrace.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[ame.miappgastos] Attempt to remove non-JNI local reference
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Maui.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Maui.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Memory.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Memory.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Maui.Essentials.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.Core.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Maui.Essentials.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.Core.dll'. Module was built without symbols.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Console.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Console.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.ComponentModel.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.ComponentModel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.DependencyInjection.Abstractions.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.DependencyInjection.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.Hosting.Abstractions.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Maui.Controls.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.ObjectModel.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Maui.Controls.Xaml.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly SQLitePCLRaw.batteries_v2.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly netstandard.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.Configuration.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.Configuration.Abstractions.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.Diagnostics.Abstractions.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.Logging.Abstractions.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly CommunityToolkit.Mvvm.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Maui.Graphics.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.Logging.Debug.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.Hosting.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Maui.Controls.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.ObjectModel.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Maui.Controls.Xaml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\SQLitePCLRaw.batteries_v2.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\netstandard.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.Configuration.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.Diagnostics.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.Logging.Abstractions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\CommunityToolkit.Mvvm.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Maui.Graphics.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.Logging.Debug.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Microsoft.Extensions.Primitives.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Microsoft.Extensions.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Private.Uri.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Xml.ReaderWriter.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Private.Xml.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Private.Uri.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Xml.ReaderWriter.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Private.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Runtime.Loader.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Runtime.Loader.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Linq.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Linq.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.ComponentModel.TypeConverter.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.ComponentModel.TypeConverter.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.Google.Android.Material.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.AppCompat.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.Google.Android.Material.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.Fragment.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.Activity.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.Lifecycle.Common.Jvm.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.SavedState.SavedState.Android.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.DrawerLayout.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.CustomView.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly Xamarin.AndroidX.Navigation.Runtime.Android.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly System.Net.Primitives.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly SQLitePCLRaw.core.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly SQLitePCLRaw.provider.dynamic_cdecl.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+[monodroid-assembly] open_from_update_dir: assembly file DOES NOT EXIST
+[monodroid-assembly] open_from_bundles: failed to load bundled assembly SQLitePCLRaw.provider.dynamic_cdecl.dll
+[monodroid-assembly] open_from_bundles: the assembly might have been uploaded to the device with FastDev instead
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.AppCompat.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.Fragment.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.Activity.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.Lifecycle.Common.Jvm.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.SavedState.SavedState.Android.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.DrawerLayout.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.CustomView.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\Xamarin.AndroidX.Navigation.Runtime.Android.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\System.Net.Primitives.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+MiAppGastos.dll: Loaded 'C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-android\android\assets\x86_64\SQLitePCLRaw.core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+[AndroidRuntime] Shutting down VM
+[AndroidRuntime] FATAL EXCEPTION: main
+[AndroidRuntime] Process: com.companyname.miappgastos, PID: 23282
+[AndroidRuntime] android.runtime.JavaProxyThrowable: [System.IO.FileNotFoundException]: Could not load file or assembly 'SQLitePCLRaw.provider.dynamic_cdecl, Version=2.0.4.976, Culture=neutral, PublicKeyToken=b68184102cba0b3b' or one of its dependencies.
+[AndroidRuntime] 	at SQLitePCL.Batteries_V2.Init + 0x0(Unknown Source)
+[AndroidRuntime] 	at MiAppGastos.MauiProgram.CreateMauiApp(C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\MauiProgram.cs:28)
+[AndroidRuntime] 	at MiAppGastos.MainApplication.CreateMauiApp(C:\AppsMoviles\AppMoviles-INF320-202601-G2\Proyecto 3\Platforms\Android\MainApplication.cs:15)
+[AndroidRuntime] 	at Microsoft.Maui.MauiApplication.OnCreate(/_/src/Core/src/Platform/Android/MauiApplication.cs:36)
+[AndroidRuntime] 	at Android.App.Application.n_OnCreate + 0xe(Unknown Source)
+[AndroidRuntime] 	at crc6488302ad6e9e4df1a.MauiApplication.n_onCreate(Native Method)
+[AndroidRuntime] 	at crc6488302ad6e9e4df1a.MauiApplication.onCreate(MauiApplication.java:27)
+[AndroidRuntime] 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1381)
+[AndroidRuntime] 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7830)
+[AndroidRuntime] 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+[AndroidRuntime] 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2546)
+[AndroidRuntime] 	at android.os.Handler.dispatchMessage(Handler.java:110)
+[AndroidRuntime] 	at android.os.Looper.loopOnce(Looper.java:248)
+[AndroidRuntime] 	at android.os.Looper.loop(Looper.java:338)
+[AndroidRuntime] 	at android.app.ActivityThread.main(ActivityThread.java:9067)
+[AndroidRuntime] 	at java.lang.reflect.Method.invoke(Native Method)
+[AndroidRuntime] 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+[AndroidRuntime] 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)

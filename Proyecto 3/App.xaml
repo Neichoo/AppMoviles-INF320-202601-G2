@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:MiAppGastos.Converters"
+             x:Class="MiAppGastos.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Colores globales -->
+            <Color x:Key="Primary">#512BD4</Color>
+            <Color x:Key="Green">#4CAF50</Color>
+            <Color x:Key="Red">#F44336</Color>
+
+            <!-- Convertidor para colores según tipo de transacción -->
+            <converters:AmountColorConverter x:Key="AmountColorConverter" />
+
+            <!-- Estilos base -->
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#212121" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="Padding" Value="14,10" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
