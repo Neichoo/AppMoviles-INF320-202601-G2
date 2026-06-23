@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiAppGastos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+47b163c0d18d016005c2e8849e876b12aa0e5b50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+02f2d846df523b2a2866d316d71097aaa2eb408b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiAppGastos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiAppGastos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

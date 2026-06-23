@@ -25,8 +25,8 @@
 
         <!-- Botones -->
         <HorizontalStackLayout Spacing="10">
-            <Button Text="Guardar" Command="{Binding SaveCommand}" BackgroundColor="{StaticResource Green}" HorizontalOptions="FillAndExpand" />
-            <Button Text="Cancelar" Command="{Binding CancelCommand}" BackgroundColor="{StaticResource Red}" HorizontalOptions="FillAndExpand" />
+            <Button Text="Guardar" Command="{Binding SaveCommand}" BackgroundColor="{StaticResource Green}" />
+            <Button Text="Cancelar" Command="{Binding CancelCommand}" BackgroundColor="{StaticResource Red}" />
         </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

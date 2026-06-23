@@ -10,57 +10,166 @@
         <converters:AmountColorConverter x:Key="AmountColorConverter" />
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="Auto, Auto, *">
-        <!-- Balance -->
-        <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="5">
-            <Label Text="Balance" FontSize="14" TextColor="Gray"/>
-            <Label Text="{Binding TotalBalance, StringFormat='{0:C}'}" FontSize="32" FontAttributes="Bold"/>
-            <HorizontalStackLayout Spacing="30">
-                <VerticalStackLayout>
-                    <Label Text="Ingresos" FontSize="12" TextColor="Green"/>
-                    <Label Text="{Binding TotalIngresos, StringFormat='{0:C}'}" TextColor="Green"/>
-                </VerticalStackLayout>
-                <VerticalStackLayout>
-                    <Label Text="Egresos" FontSize="12" TextColor="Red"/>
-                    <Label Text="{Binding TotalGastos, StringFormat='{0:C}'}" TextColor="Red"/>
-                </VerticalStackLayout>
-            </HorizontalStackLayout>
+
+    <!-- SECCIÓN BALANCE -->
+    <VerticalStackLayout Padding="12,20">
+
+        <VerticalStackLayout Padding="-14,-24" Spacing="12">
+            <Border BackgroundColor="#2A1B4E" 
+                    StrokeThickness="0" 
+                    HeightRequest="260" 
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Fill">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="0, 0, 40, 40" />
+                </Border.StrokeShape>
+                <Grid
+                    Padding="20"
+                    RowSpacing="8">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                        Text="Hola," FontSize="20" TextColor="Gray"
+                        HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold"
+                        />
+                    <Label Grid.Row="1"
+                        Text="Alexis Henríquez" FontSize="32" TextColor="white"
+                        HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold"
+                        />
+                </Grid>
+            </Border>
         </VerticalStackLayout>
+        <VerticalStackLayout Padding="0,-100,0,0" Spacing="12">
+            <Border Stroke="darkblue" StrokeShape="RoundRectangle 32,32,32,32" StrokeThickness="1">
+                <Border.Shadow>
+                    <Shadow
+                        Brush="darkblue"
+                        Opacity="0.5"
+                        Radius="15"
+                        Offset="0,0" />
+                </Border.Shadow>
+                <Grid 
+                    BackgroundColor="white"
+                    Padding="10"
+                    RowSpacing="8">
 
-        <!-- Lista de Transacciones -->
-        <CollectionView Grid.Row="1" ItemsSource="{Binding Transactions}" Margin="10">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <HorizontalStackLayout Padding="10" Spacing="10">
-                        <Label Text="{Binding Description}" VerticalOptions="Center" FontSize="16"/>
-                        <Label Text="{Binding Date, StringFormat='dd-MM-yyyy'}" VerticalOptions="Center" FontSize="12" TextColor="Gray"/>
-                        <Label Text="{Binding Amount, StringFormat='{0:C}'}" 
-                               VerticalOptions="Center" 
-                               TextColor="{Binding Type, Converter={StaticResource AmountColorConverter}}"/>
-                        <Button Text="X" 
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainViewModel}}, Path=DeleteTransactionCommand}" 
-                                CommandParameter="{Binding Id}" 
-                                BackgroundColor="Red" 
-                                TextColor="White" 
-                                CornerRadius="5" 
-                                Padding="5,2" />
-                    </HorizontalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                    <!-- Definición de filas y columnas -->
 
-        <!-- Botón flotante + -->
-        <Button Grid.Row="2" 
-                Text="+" 
-                FontSize="30" 
-                CornerRadius="30" 
-                WidthRequest="60" 
-                HeightRequest="60"
-                HorizontalOptions="End" 
-                VerticalOptions="End" 
-                Margin="20"
-                Command="{Binding GoToAddTransactionCommand}" 
-                BackgroundColor="#512BD4" 
-                TextColor="White" />
-    </Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- BALANCE -->
+
+                    <Label Grid.Row="0" Grid.ColumnSpan="2" 
+                        Text="Balance" FontSize="28" TextColor="Gray"
+                        HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" />
+                    <Label Grid.Row="1" Grid.ColumnSpan="2" 
+                        Text="{Binding TotalBalance, StringFormat='{0:C}'}" FontSize="32"
+                        HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" />
+
+                    <!-- INGRESOS -->
+
+                    <Label Grid.Row="2" Grid.Column="0" 
+                        Text="Ingresos" FontSize="20" TextColor="Green"
+                        HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" />
+                    <Label Grid.Row="3" Grid.Column="0" 
+                        Text="{Binding TotalIngresos, StringFormat='{0:C}'}" FontSize="20" TextColor="Green"
+                        HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" />
+
+                    <!-- EGRESOS -->
+
+                    <Label Grid.Row="2" Grid.Column="1" 
+                        Text="Egresos" FontSize="20" TextColor="Red"
+                        HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" />
+                    <Label Grid.Row="3" Grid.Column="1" 
+                        Text="{Binding TotalGastos, StringFormat='{0:C}'}" FontSize="20" TextColor="Red"
+                        HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" />
+
+                    <!-- BOTÓN -->
+
+                    <Button Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2"
+                            Text="+" 
+                            FontSize="30" 
+                            CornerRadius="30" 
+                            WidthRequest="60" 
+                            HeightRequest="60"
+                            HorizontalOptions="Center" 
+                            VerticalOptions="Center" 
+                            Margin="20"
+                            Command="{Binding GoToAddTransactionCommand}" 
+                            BackgroundColor="#512BD4" 
+                            TextColor="White" />
+                </Grid>
+            </Border>
+
+            <!-- SECCIÓN TRANSACCIONES -->
+
+            <Grid 
+                BackgroundColor="white"
+                Padding="20"
+                RowSpacing="8">
+                
+                <!-- Definición de filas y columnas -->
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <CollectionView  ItemsSource="{Binding Transactions}" Margin="10">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <HorizontalStackLayout Padding="10" Spacing="10">
+
+                                <!-- Descripción -->
+
+                                <Label  Grid.Column="0"
+                                    Text="{Binding Description}" 
+                                    VerticalOptions="Center" FontSize="16"/>
+
+                                <!-- Fecha -->
+
+                                <Label Grid.Column="1"
+                                    Text="{Binding Date, StringFormat='dd-MM-yyyy'}" 
+                                    VerticalOptions="Center" FontSize="12" TextColor="Gray"/>
+
+                                <!-- Monto -->
+
+                                <Label Grid.Column="2"
+                                    Text="{Binding Amount, StringFormat='{0:C}'}" 
+                                    VerticalOptions="Center" 
+                                    TextColor="{Binding Type, Converter={StaticResource AmountColorConverter}}"/>
+
+                                <!-- Botón eliminar -->
+
+                                <Button Grid.Column="3" 
+                                    Text="X" 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainViewModel}}, Path=DeleteTransactionCommand}" 
+                                        CommandParameter="{Binding Id}" 
+                                        BackgroundColor="Red" 
+                                        TextColor="White" 
+                                        CornerRadius="5" 
+                                        Padding="5,2" />
+
+                            </HorizontalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>

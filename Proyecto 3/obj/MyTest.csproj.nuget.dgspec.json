@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AppsMoviles\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj": {}
+    "C:\\github\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj": {}
   },
   "projects": {
-    "C:\\AppsMoviles\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj": {
+    "C:\\github\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AppsMoviles\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj",
+        "projectUniqueName": "C:\\github\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj",
         "projectName": "MiAppGastos",
-        "projectPath": "C:\\AppsMoviles\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj",
-        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
-        "outputPath": "C:\\AppsMoviles\\AppMoviles-INF320-202601-G2\\Proyecto 3\\obj\\",
+        "projectPath": "C:\\github\\AppMoviles-INF320-202601-G2\\Proyecto 3\\MyTest.csproj",
+        "packagesPath": "C:\\Users\\dango\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\AppMoviles-INF320-202601-G2\\Proyecto 3\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dango\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0-android",
@@ -76,12 +76,12 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.8, )",
               "autoReferenced": true
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[2.1.11, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -89,7 +89,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -103,6 +103,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.5, 10.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.Android": {
               "privateAssets": "all"
@@ -114,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -408,12 +414,12 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.8, )",
               "autoReferenced": true
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[2.1.11, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -421,7 +427,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -435,6 +441,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.5, 10.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.iOS": {
               "privateAssets": "all"
@@ -446,7 +458,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -740,12 +752,12 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.7, )",
+              "version": "[10.0.8, )",
               "autoReferenced": true
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[2.1.11, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -753,7 +765,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -768,6 +780,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[10.0.5, 10.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.MacCatalyst": {
               "privateAssets": "all"
@@ -779,7 +797,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1072,7 +1090,7 @@
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[2.1.11, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -1080,7 +1098,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.8.116, )"
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -1108,7 +1126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
