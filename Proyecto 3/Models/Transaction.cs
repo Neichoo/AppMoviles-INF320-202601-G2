@@ -12,10 +12,10 @@ public class Transaction
     public string Description { get; set; } = string.Empty;
     
     [NotNull]
-    public decimal Amount { get; set; } // Positivo para ingresos, Negativo para gastos (o usar un Enum)
+    public decimal Amount { get; set; }
     
     [NotNull]
-    public TransactionType Type { get; set; } // Ingreso o Gasto
+    public TransactionType Type { get; set; }
     
     [NotNull]
     public DateTime Date { get; set; }

@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.IO;                     // Para Path
-using Microsoft.Maui.Storage;        // Para FileSystem
+using System.IO;
+using Microsoft.Maui.Storage;
 
 namespace MiAppGastos.Services;
 

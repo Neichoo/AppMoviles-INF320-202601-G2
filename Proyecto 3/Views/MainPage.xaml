@@ -18,23 +18,31 @@
         <VerticalStackLayout Grid.Row="0" Spacing="0">
             <VerticalStackLayout Padding="-14,-24">
                 <Border BackgroundColor="#2A1B4E" 
-                        StrokeThickness="0" 
-                        HeightRequest="260" 
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Fill">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="0, 0, 40, 40" />
-                    </Border.StrokeShape>
-                    <Grid Padding="20" RowSpacing="8">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Label Grid.Row="0"
-                            Text="Bienvenido!" FontSize="32" TextColor="white"
-                            HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold"
-                            Margin="0,15,0,0" />
-                    </Grid>
-                </Border>
+                    StrokeThickness="0" 
+                    HeightRequest="260" 
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Fill">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="0, 0, 40, 40" />
+                </Border.StrokeShape>
+                <Grid
+                    Padding="20"
+                    RowSpacing="8">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                        Text="Hola," FontSize="20" TextColor="Gray"
+                        HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold"
+                        />
+                    <Label Grid.Row="1"
+                        Text="Alexis Henríquez" FontSize="32" TextColor="white"
+                        HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold"
+                        />
+                </Grid>
+            </Border>
             </VerticalStackLayout>
             <VerticalStackLayout Padding="0,-100,0,0">
                 <Border Stroke="darkblue" StrokeShape="RoundRectangle 32,32,32,32" StrokeThickness="1">
