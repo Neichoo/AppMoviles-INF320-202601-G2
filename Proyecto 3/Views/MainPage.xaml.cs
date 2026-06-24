@@ -1,3 +1,4 @@
+using MiAppGastos.Models;
 using MiAppGastos.ViewModels;
 
 namespace MiAppGastos.Views;
@@ -18,6 +19,14 @@ public partial class MainPage : ContentPage
         if (BindingContext is MainViewModel vm)
         {
             await vm.LoadTransactionsAsync();
+        }
+    }
+
+    private async void OnTransactionTapped(object? sender, EventArgs e)
+    {
+        if (sender is Border border && border.BindingContext is Transaction transaction)
+        {
+            await DisplayAlert("Detalle", transaction.Description, "Cerrar");
         }
     }
 }

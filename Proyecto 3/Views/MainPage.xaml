@@ -118,54 +118,62 @@
 
             <Grid 
                 BackgroundColor="white"
-                Padding="20"
+                Padding="10"
                 RowSpacing="8">
-                
-                <!-- Definición de filas y columnas -->
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="auto" />
-                </Grid.ColumnDefinitions>
-
-                <CollectionView  ItemsSource="{Binding Transactions}" Margin="10">
+                <CollectionView ItemsSource="{Binding Transactions}" Margin="0" HorizontalOptions="Fill">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <HorizontalStackLayout Padding="10" Spacing="10">
+                            <Border Stroke="#E0E0E0" StrokeThickness="1" Padding="10" Margin="0,4" BackgroundColor="#FAFAFA">
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnTransactionTapped" NumberOfTapsRequired="1" />
+                                </Border.GestureRecognizers>
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="16" />
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Fill">
 
-                                <!-- Descripción -->
+                                    <!-- Fila principal: descripción + botón eliminar -->
+                                    <Grid ColumnDefinitions="*, 44" HorizontalOptions="Fill">
+                                        <Label Text="{Binding Description}"
+                                               Grid.Column="0"
+                                               VerticalOptions="Center"
+                                               FontSize="16"
+                                               FontAttributes="Bold"
+                                               LineBreakMode="TailTruncation"
+                                               MaxLines="1"
+                                               HorizontalOptions="StartAndExpand" />
 
-                                <Label  Grid.Column="0"
-                                    Text="{Binding Description}" 
-                                    VerticalOptions="Center" FontSize="16"/>
+                                        <Button Grid.Column="1"
+                                                Text="X"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainViewModel}}, Path=DeleteTransactionCommand}"
+                                                CommandParameter="{Binding Id}"
+                                                BackgroundColor="Red"
+                                                TextColor="White"
+                                                CornerRadius="5"
+                                                Padding="5,2"
+                                                WidthRequest="40"
+                                                HeightRequest="32"
+                                                HorizontalOptions="End" />
+                                    </Grid>
 
-                                <!-- Fecha -->
+                                    <!-- Fila secundaria: fecha + monto -->
+                                    <Grid ColumnDefinitions="*, Auto" HorizontalOptions="Fill">
+                                        <Label Text="{Binding Date, StringFormat='{}{0:dd-MM-yyyy}'}"
+                                               Grid.Column="0"
+                                               FontSize="12"
+                                               TextColor="Gray"
+                                               HorizontalOptions="Start" />
 
-                                <Label Grid.Column="1"
-                                    Text="{Binding Date, StringFormat='dd-MM-yyyy'}" 
-                                    VerticalOptions="Center" FontSize="12" TextColor="Gray"/>
-
-                                <!-- Monto -->
-
-                                <Label Grid.Column="2"
-                                    Text="{Binding Amount, StringFormat='{0:C}'}" 
-                                    VerticalOptions="Center" 
-                                    TextColor="{Binding Type, Converter={StaticResource AmountColorConverter}}"/>
-
-                                <!-- Botón eliminar -->
-
-                                <Button Grid.Column="3" 
-                                    Text="X" 
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:MainViewModel}}, Path=DeleteTransactionCommand}" 
-                                        CommandParameter="{Binding Id}" 
-                                        BackgroundColor="Red" 
-                                        TextColor="White" 
-                                        CornerRadius="5" 
-                                        Padding="5,2" />
-
-                            </HorizontalStackLayout>
+                                        <Label Text="{Binding Amount, StringFormat='{}{0:C}'}"
+                                               Grid.Column="1"
+                                               FontSize="14"
+                                               TextColor="{Binding Type, Converter={StaticResource AmountColorConverter}}"
+                                               HorizontalTextAlignment="End"
+                                               HorizontalOptions="End" />
+                                    </Grid>
+                                </VerticalStackLayout>
+                            </Border>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
