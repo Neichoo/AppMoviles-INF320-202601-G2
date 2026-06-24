@@ -16,4 +16,4 @@
     - Medium Phone.
     - API 36.0
     - Google APIs
-- Abrir el Proyecto 2 en Visual Studio Code y darle correr proyecto desde "MyTest.csproj"
+- Abrir el Proyecto 3 en Visual Studio Code y darle correr proyecto desde "MyTest.csproj"
