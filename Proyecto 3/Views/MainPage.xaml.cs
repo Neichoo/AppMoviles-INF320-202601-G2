@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
     {
         if (sender is Border border && border.BindingContext is Transaction transaction)
         {
-            await DisplayAlert("Detalle", transaction.Description, "Cerrar");
+            await DisplayAlertAsync("Detalle", transaction.Description, "Cerrar");
         }
     }
 }

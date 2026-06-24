@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="MiAppGastos" mvid="f7d77b75f6a348bf9da18a75bd57246c">
+<api type="debug" assembly-name="MiAppGastos" mvid="1e83cc5b2fbd43a88afa92d0394de429">
   <java-to-managed>
     <entry java-name="crc64b11ed4922f81cafb/MainActivity" managed-name="MiAppGastos.MainActivity, MiAppGastos" managed-type-token-id="33554442" />
     <entry java-name="crc64b11ed4922f81cafb/MainApplication" managed-name="MiAppGastos.MainApplication, MiAppGastos" managed-type-token-id="33554443" />

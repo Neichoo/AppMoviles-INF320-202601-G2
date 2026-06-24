@@ -136,8 +136,7 @@
                                            FontSize="16"
                                            FontAttributes="Bold"
                                            LineBreakMode="TailTruncation"
-                                           MaxLines="1"
-                                           HorizontalOptions="StartAndExpand" />
+                                           MaxLines="1" />
 
                                     <Button Grid.Column="1"
                                             Text="X"
