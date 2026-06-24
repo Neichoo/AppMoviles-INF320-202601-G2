@@ -1,0 +1,12 @@
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\MyTest.csproj.AssemblyReference.cache
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\mauiimage.inputs
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\mauifont.inputs
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\mauisplash.inputs
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\mauimanifest.stamp
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Platforms\Windows\App.g.i.cs
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Platforms\Windows\App.g.cs
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\XamlTypeInfo.g.cs
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Platforms\Windows\App.xaml
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Platforms\Windows\App.xbf
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\XamlSaveStateFile.xml
+C:\Users\gomez\Documents\GitHub\AppMoviles-INF320-202601-G2\Proyecto 3\obj\Debug\net10.0-windows10.0.19041.0\win-x64\MyTest.GeneratedMSBuildEditorConfig.editorconfig
